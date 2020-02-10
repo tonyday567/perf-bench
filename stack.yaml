@@ -1,0 +1,16 @@
+resolver: lts-14.13
+
+packages:
+  - .
+
+extra-deps:
+  - rdtsc-1.3.0.1
+  - readme-lhs-0.2.2
+  - git: https://github.com/tonyday567/perf.git
+    commit: df35c2c6f3e5f4cee0f7fb9368f16969cc2423f8
+    subdirs:
+      - perf
+      - perf-analysis
+      - perf-criterion
+
+allow-newer: true
